@@ -100,13 +100,14 @@ html {
     background: #F76C6C;
     color: #24305E;
     position: fixed;
-    top: 0;
+    top: 96px;
     left: 0;
     height: 100%;
     width: 100%;
-    padding: 3.75rem;
     z-index: 99;
-    overflow-x: hidden;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
     transform: translateY(-100px);
     transition: all .4s ease-in-out;
 }
@@ -122,12 +123,13 @@ html {
 .full-nav .logo {
     display: flex;
     justify-content: center;
-    padding: 6rem;
+    padding: 5rem;
 }
 
 .navtwo {
     display: flex;
     justify-content: center;
+    margin-top: -70px;
 }
 
 .navtwo ul {
@@ -208,10 +210,56 @@ ul.social-icons.list-inline {
 
 .corner-circle {
     position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 0 0 0 120px;
+    z-index: 2;
+}
+
+.nav-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    top: 30px;
+    right: 30px;
+}
+
+.nav-close span {
+    position: absolute;
+    top: 14px;
+    background: #18191d;
+    width: 30px;
+    height: 1px;
+    display: block;
+}
+
+
+.nav-close span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.nav-close span:nth-child(2) {
+    transform: rotate(-45deg);
 }
 
 
 
+.nav.sticky {
+    background: white;
+    position: fixed;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+    animation-name: animationFade;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.nav.sticky a {
+    color: #18191d;
+}
 
 
 
