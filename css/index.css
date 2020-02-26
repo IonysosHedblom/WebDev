@@ -16,10 +16,6 @@ html {
     padding-top: 20px;
 }
 
-.header ul li {
-    list-style: none;
-}
-
 .nav {
     display: flex;
     justify-content: center;
@@ -281,8 +277,9 @@ ul.social-icons.list-inline {
     background: #18191d;
 }
 
-
-
+img#mac-image {
+    width: 100%;
+}
 
 @keyframes animationFade {
     from {
