@@ -30,8 +30,10 @@ ul.bxslider {
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
     position: absolute;
-        bottom: 200px;
+        bottom: 380px;
+        right: 1%;
     width: 100%;
+
 }
 /* LOADER */
 /* PAGER */
