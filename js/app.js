@@ -21,7 +21,7 @@ $(document).ready(() => {
 
     $(window).scroll(() => {
         let scroll = $(window).scrollTop();
-        if (scroll > 100) {
+        if (scroll > 10) {
             $('.nav').addClass('sticky');
         }
         else {
