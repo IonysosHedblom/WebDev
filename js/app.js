@@ -38,9 +38,6 @@ $(document).ready(() => {
 			maxSlides: 1,
 			speed: 1200,
 		});
-
-
-
 });
 
 
